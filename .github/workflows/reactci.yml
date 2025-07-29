@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
 
-jobs:
+
   jobs:
   build-and-test:
     runs-on: ${{ matrix.os }}
@@ -15,7 +15,6 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         node-version: [18, 19, 20]
   
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
